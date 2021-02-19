@@ -8,9 +8,11 @@ ${PASSWORD}
 *** Test Cases ***
 Login Test
      #log            ${URL}
-     [Common] - Open Chrome Browser with mode           https://google.com.vn
-     [Common] - Input text into textbox     //input[@name='q']        ${URL}
-     [Common] - Input text into textbox
+     [Common] - Open Chrome Browser with mode           https://trading-uat.hsc.com.vn/
+     [Common] - Input text into textbox     //input[@class='ant-input ant-input-lg input-escape text-uppercase']        ${USERNAME}
+     [Common] - Input text into textbox     //input[@class='ant-input ant-input-lg input-escape passwords-mask ']       ${PASSWORD}
+     [Common] - click element      //button[@class='ant-btn ant-btn-primary ant-btn-lg']
+     [Common] - Execute JavaScripts Wait Element Is Visible           //div[@id='logo']
      Close Browser
 # #     Acquire Lock   MyLock
 # #     Log   This part is critical section

@@ -47,7 +47,7 @@ for line in lines:
     cmdParts = [
             'robot',
             # abitrary amount of variables can be added here
-            '--variable', 'URL:' + user,
+            '--variable', 'USERNAME:' + user,
             '--variable', 'PASSWORD:' + testUsersPassword,
             '-v browser:chrome',
             '-t', 'Login Test',

@@ -11,15 +11,15 @@ chromedriver --version
 ################## CONFIG ENV ##################
 path="$(dirname "$(dirname $PWD)")"
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
-TESTCASE_FILES="$path/demo_UI_performance_test/5_test_cases/run_robot.py"
-RESULT_FOLDER="$path/demo_UI_performance_test/results"
+TESTCASE_FILES="$path/robot_for_performance_UI/5_test_cases/run_robot.py"
+RESULT_FOLDER="$path/robot_for_performance_UI/results"
 
-EXPORT_CSV_FILES="$path/demo_UI_performance_test/5_test_cases/parsing_report_html.py"
+EXPORT_CSV_FILES="$path/robot_for_performance_UI/5_test_cases/parsing_report_html.py"
 
-CSV_FILES="$path/demo_UI_performance_test/results/execution_time_report.csv"
-ROBOT_FILES="$path/demo_UI_performance_test/5_test_cases/fake_test.robot"
-USR_INFOR_FILES="$path/demo_UI_performance_test/5_test_cases/user.txt"
-USR_PASSWORD="SECRET"
+CSV_FILES="$path/robot_for_performance_UI/results/execution_time_report.csv"
+ROBOT_FILES="$path/robot_for_performance_UI/5_test_cases/fake_test.robot"
+USR_INFOR_FILES="$path/robot_for_performance_UI/5_test_cases/user.txt"
+USR_PASSWORD="123456"
 
 ############ REMOVE RESULT FOLDER ##################
 echo "=== Remove result folder==="
