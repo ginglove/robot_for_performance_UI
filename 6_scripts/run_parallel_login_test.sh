@@ -17,7 +17,7 @@ RESULT_FOLDER="$path/robot_for_performance_UI/results"
 EXPORT_CSV_FILES="$path/robot_for_performance_UI/5_test_cases/parsing_report_html.py"
 
 CSV_FILES="$path/robot_for_performance_UI/results/execution_time_report.csv"
-ROBOT_FILES="$path/robot_for_performance_UI/5_test_cases/fake_test.robot"
+ROBOT_FILES="$path/robot_for_performance_UI/5_test_cases/login_performance_ui.robot"
 USR_INFOR_FILES="$path/robot_for_performance_UI/5_test_cases/user.txt"
 USR_PASSWORD="123456"
 
