@@ -44,4 +44,5 @@ Resource     ./2_elements/HomePage.robot
 #### ROBOT KEYWORDS ####
 Resource     ./4_keywords/Login_Keywords.robot
 Resource     ./4_keywords/HomePage_Keywords.robot
+Resource     ./4_keywords/Place_Order_Keywords.robot
 
