@@ -38,9 +38,10 @@ Resource          ./1_common/sql_common_keywords.robot
 Resource          ./1_common/web_common_keywords.robot
 
 #### ROBOT ELEMENT ####
-Resource     ./2_elements/homepage.robot
-
+Resource     ./2_elements/LoginPage.robot
+Resource     ./2_elements/HomePage.robot
 
 #### ROBOT KEYWORDS ####
+Resource     ./4_keywords/Login_Keywords.robot
 Resource     ./4_keywords/HomePage_Keywords.robot
 
