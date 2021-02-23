@@ -26,5 +26,5 @@ Resource      ../imports.robot
      Input Text          ${txt_Login}        ${USERNAME}
      Input Text          ${txt_Password}        ${PASSWORD}
      Click Element       ${btn_Login}
-      Sleep          5s
+     Sleep          5s
      # Handle Alert   LEAVE
