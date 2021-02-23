@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.9.1 on win32)" generated="20210223 13:54:15.144" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.9.1 on win32)" generated="20210223 16:32:37.112" rpa="false">
 <suite id="s1" name="place Order" source="G:\RobotFramework\robot_for_performance_UI\5_test_cases\place_Order.robot">
 <test id="s1-t1" name="TC2">
 <kw name="[KW] Login" library="Login_Keywords">
@@ -9,20 +9,20 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210223 13:54:16.106" level="INFO">Opening browser 'chrome' to base url 'https://trading-uat.hsc.com.vn/'.</msg>
-<status status="PASS" starttime="20210223 13:54:16.105" endtime="20210223 13:54:43.212"></status>
+<msg timestamp="20210223 16:32:38.075" level="INFO">Opening browser 'chrome' to base url 'https://trading-uat.hsc.com.vn/'.</msg>
+<status status="PASS" starttime="20210223 16:32:38.075" endtime="20210223 16:32:43.526"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210223 13:54:43.212" endtime="20210223 13:54:45.377"></status>
+<status status="PASS" starttime="20210223 16:32:43.526" endtime="20210223 16:32:45.697"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${txt_Login}</arg>
 </arguments>
-<msg timestamp="20210223 13:54:45.378" level="INFO">Clicking element '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
-<status status="PASS" starttime="20210223 13:54:45.377" endtime="20210223 13:54:45.457"></status>
+<msg timestamp="20210223 16:32:45.698" level="INFO">Clicking element '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
+<status status="PASS" starttime="20210223 16:32:45.698" endtime="20210223 16:32:45.762"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -30,8 +30,8 @@
 <arg>${txt_Login}</arg>
 <arg>${USERNAME}</arg>
 </arguments>
-<msg timestamp="20210223 13:54:45.457" level="INFO">Typing text '005766' into text field '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
-<status status="PASS" starttime="20210223 13:54:45.457" endtime="20210223 13:54:45.559"></status>
+<msg timestamp="20210223 16:32:45.763" level="INFO">Typing text '005766' into text field '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
+<status status="PASS" starttime="20210223 16:32:45.762" endtime="20210223 16:32:45.893"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -39,26 +39,26 @@
 <arg>${txt_Password}</arg>
 <arg>${PASSWORD}</arg>
 </arguments>
-<msg timestamp="20210223 13:54:45.559" level="INFO">Typing text 'Test@1234' into text field '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']'.</msg>
-<status status="PASS" starttime="20210223 13:54:45.559" endtime="20210223 13:54:45.680"></status>
+<msg timestamp="20210223 16:32:45.894" level="INFO">Typing text 'Test@1234' into text field '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']'.</msg>
+<status status="PASS" starttime="20210223 16:32:45.893" endtime="20210223 16:32:46.009"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_Login}</arg>
 </arguments>
-<msg timestamp="20210223 13:54:45.681" level="INFO">Clicking element '//button[@class='ant-btn ant-btn-primary ant-btn-lg']'.</msg>
-<status status="PASS" starttime="20210223 13:54:45.681" endtime="20210223 13:54:45.733"></status>
+<msg timestamp="20210223 16:32:46.010" level="INFO">Clicking element '//button[@class='ant-btn ant-btn-primary ant-btn-lg']'.</msg>
+<status status="PASS" starttime="20210223 16:32:46.010" endtime="20210223 16:32:46.054"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20210223 13:54:50.748" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210223 13:54:45.733" endtime="20210223 13:54:50.748"></status>
+<msg timestamp="20210223 16:32:51.064" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210223 16:32:46.054" endtime="20210223 16:32:51.064"></status>
 </kw>
-<status status="PASS" starttime="20210223 13:54:16.105" endtime="20210223 13:54:50.748"></status>
+<status status="PASS" starttime="20210223 16:32:38.075" endtime="20210223 16:32:51.064"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -68,47 +68,46 @@
 <assign>
 <var>${ID}</var>
 </assign>
-<msg timestamp="20210223 13:54:50.782" level="INFO">${ID} = BID</msg>
-<status status="PASS" starttime="20210223 13:54:50.750" endtime="20210223 13:54:50.782"></status>
+<msg timestamp="20210223 16:32:51.093" level="INFO">${ID} = BID</msg>
+<status status="PASS" starttime="20210223 16:32:51.065" endtime="20210223 16:32:51.093"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
-<arg>//div[@class="ag-center-cols-clipper"]//div[@class="ag-row ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-focus"]//div[@col-id="OrderPrice"]</arg>
+<arg>//section[@class="inno-content"]//div[@class="ag-center-cols-container"]//div[@row-index="0"]//div[@col-id="OrderPrice"]</arg>
 </arguments>
 <assign>
 <var>${Price}</var>
 </assign>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20210223 13:54:51.183" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210223 13:54:50.794" endtime="20210223 13:54:51.183"></status>
+<msg timestamp="20210223 16:32:51.121" level="INFO">${Price} = 43.45</msg>
+<status status="PASS" starttime="20210223 16:32:51.094" endtime="20210223 16:32:51.121"></status>
 </kw>
-<msg timestamp="20210223 13:54:51.184" level="FAIL">Element with locator '//div[@class="ag-center-cols-clipper"]//div[@class="ag-row ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-focus"]//div[@col-id="OrderPrice"]' not found.</msg>
-<status status="FAIL" starttime="20210223 13:54:50.782" endtime="20210223 13:54:51.184"></status>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210223 16:32:51.123" endtime="20210223 16:32:53.573"></status>
 </kw>
 <tags>
 <tag>2</tag>
 </tags>
-<status status="FAIL" starttime="20210223 13:54:16.105" endtime="20210223 13:54:51.185" critical="yes">Element with locator '//div[@class="ag-center-cols-clipper"]//div[@class="ag-row ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-focus"]//div[@col-id="OrderPrice"]' not found.</status>
+<status status="PASS" starttime="20210223 16:32:38.074" endtime="20210223 16:32:53.575" critical="yes"></status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20210223 13:54:15.149" endtime="20210223 13:54:51.186"></status>
+<status status="PASS" starttime="20210223 16:32:37.117" endtime="20210223 16:32:53.584"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">2</stat>
+<stat pass="1" fail="0">2</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="place Order">place Order</stat>
+<stat pass="1" fail="0" id="s1" name="place Order">place Order</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210223 13:54:15.995" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
+<msg timestamp="20210223 16:32:37.957" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
 Traceback (most recent call last):
   File "G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py", line 1, in &lt;module&gt;
     from Crypto.PublicKey import RSA
@@ -120,7 +119,7 @@ PYTHONPATH:
   c:\users\dongvd\appdata\local\programs\python\python39
   C:\Users\dongvd\AppData\Roaming\Python\Python39\site-packages
   c:\users\dongvd\appdata\local\programs\python\python39\lib\site-packages</msg>
-<msg timestamp="20210223 13:54:16.070" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\0_resources\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
+<msg timestamp="20210223 16:32:38.029" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\0_resources\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
 Traceback (most recent call last):
   File "G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py", line 1, in &lt;module&gt;
     from Crypto.PublicKey import RSA
