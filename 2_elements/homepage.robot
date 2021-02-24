@@ -1,13 +1,16 @@
 *** Variables ***
+
 ${txt_StocksID}     //input[@class="ant-input addon-input-locker"]
 ${txt_Quantity}     //input[@class="ant-input addon-input-locker text-lg"]
 ${txt_Price}        //input[@class="ant-input inno-autocomplete-price addon-input-locker text-lg"]
 ${btn_Buy}          //button[@class="ant-btn ant-btn-buy ant-btn-lg ant-btn-block"]
 ${btn_Confirm}      //button[@class="ant-btn ant-btn-buy"]
 
-# Order
+# Stock Trading
+${orderStockID}     //div[@row-index="0"]//div[@class="btnStockMenu"]
+${orderPrice}       //div[@row-index="0"]//div[@col-id="BestOfferPrice1"]
 
-# So Lenh
-${lb_StocksID}      //div[@class="ag-pinned-left-cols-container"]//div[@class="ag-row ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-focus"]//div[@class="ag-react-container"]
+# Order Book
+${lb_StocksID}      //div[@row-index="0"]//div[@class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-last-left-pinned text-left symbolColumn ag-cell-value"]
 ${lb_Quantity}      ${Quantity}
-${lb_Price}         //div[@class="ag-center-cols-clipper"]//div[@class="ag-row ag-row-even ag-row-level-0 ag-row-position-absolute ag-row-first ag-row-focus"]//div[@col-id="OrderPrice"]
+${lb_Price}         //section[@class="inno-content"]//div[@class="ag-center-cols-container"]//div[@row-index="0"]//div[@col-id="OrderPrice"]
