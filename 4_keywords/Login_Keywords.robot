@@ -18,3 +18,13 @@ Resource      ../imports.robot
      [Common] - click element     ${btn_login}
      [Common] - Select Iframe     ${iframe_login}
      [Common] - Input text into textbox     ${txtbox_form_account}        abcd
+
+[KW] Login 
+     Open Browser   ${url}    ${browser}
+     Maximize Browser Window
+     Click Element       ${txt_Login}
+     Input Text          ${txt_Login}        ${USERNAME}
+     Input Text          ${txt_Password}        ${PASSWORD}
+     Click Element       ${btn_Login}
+     Sleep          5s
+     # Handle Alert   LEAVE
