@@ -15,11 +15,9 @@ TESTCASE_FILES="$path/robot_for_performance_UI/5_test_cases/run_robot.py"
 RESULT_FOLDER="$path/robot_for_performance_UI/results"
 
 EXPORT_CSV_FILES="$path/robot_for_performance_UI/5_test_cases/parsing_report_html.py"
-GEN_CSV_REPORT_FILES="$path/robot_for_performance_UI/5_test_cases/gen_report.py"
 
 CSV_FILES="$path/robot_for_performance_UI/results/execution_time_report.csv"
-REPORT_FILES="$path/robot_for_performance_UI/results/performance_report.csv"
-ROBOT_FILES="$path/robot_for_performance_UI/5_test_cases/login_performance_ui.robot"
+ROBOT_FILES="$path/robot_for_performance_UI/5_test_cases/place_Order.robot"
 USR_INFOR_FILES="$path/robot_for_performance_UI/5_test_cases/user.txt"
 USR_PASSWORD="123456"
 
@@ -27,6 +25,7 @@ USR_PASSWORD="123456"
 echo "=== Remove result folder==="
 echo "$RESULT_FOLDER"
 rm -rf $RESULT_FOLDER/*
+
 
 ############ RUNNING TEST ##################
 echo "=== Run robot test==="
@@ -41,8 +40,5 @@ echo "=== Save Execution Time==="
 python3 $EXPORT_CSV_FILES $USR_INFOR_FILES $CSV_FILES $RESULT_FOLDER
 
 
-############ GEN CSV REPORT ##################
-echo "=== GEN CSV REPORT==="
-python3 $GEN_CSV_REPORT_FILES  $CSV_FILES   $REPORT_FILES
 ########################### ENABLE BELOW SECTION TO DISABLE TEST ##########################
 echo "=== Run Robot !!! Done !!! ==="

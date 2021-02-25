@@ -54,20 +54,26 @@ ${NUMBERS}      1234567890
     [Arguments]     ${url}
     ${browser}    convert to lowercase    ${browser}
     ${true}       convert to boolean      true
-    ${list_options}      Create List    --no-sandbox	--headless     --ignore-certificate-errors      --disable-web-security     --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
-
-    ${args}        Create Dictionary    args=${list_options}
+    ${list_options_headless}      Create List    --no-sandbox	--headless     --ignore-certificate-errors      --disable-web-security    --disable-notifications   --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
+    ${list_options}      Create List    --no-sandbox	 --ignore-certificate-errors      --disable-web-security    --disable-notifications   --disable-impl-side-painting    --enable-features=NetworkService,NetworkServiceInProcess
+    ${args_headless}        Create Dictionary    args=${list_options_headless}
+    ${args}        Create Dictionary    args=${list_options}    
+    ${desired_capabilities_headless}     create dictionary
+    ...         acceptSslCerts=${true}
+    ...         acceptInsecureCerts=${true}
+    ...         ignore-certificate-errors=${true}
+    ...         chromeOptions=${args_headless}
     ${desired_capabilities}     create dictionary
     ...         acceptSslCerts=${true}
     ...         acceptInsecureCerts=${true}
     ...         ignore-certificate-errors=${true}
-    ...         chromeOptions=${args}
+    ...         chromeOptions=${args}    
 
     Run Keyword If   '${browser}' == 'chrome'            Run Keywords
-    ...             Open Browser    ${url}    ${browser}
+    ...             Open Browser    ${url}    ${browser}    desired_capabilities=${desired_capabilities}
     ...        AND    [Common] - Maximize browser size to fit screen
     ...     ELSE IF   '${browser}' == 'headlesschrome'    Run keywords
-    ...             Open Browser    ${url}    ${browser}    desired_capabilities=${desired_capabilities}
+    ...             Open Browser    ${url}    ${browser}    desired_capabilities=${desired_capabilities_headless}
 #    ...             Open Chrome Headless Browser    ${url}
     ...        AND     [Common] - Maximize browser size to fit screen
     ...     ELSE        should be true  ${FALSE}
