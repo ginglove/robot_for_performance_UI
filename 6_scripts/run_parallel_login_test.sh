@@ -43,6 +43,6 @@ python3 $EXPORT_CSV_FILES $USR_INFOR_FILES $CSV_FILES $RESULT_FOLDER
 
 ############ GEN CSV REPORT ##################
 echo "=== GEN CSV REPORT==="
-python3 $GEN_CSV_REPORT_FILES  $CSV_FILES   $REPORT_FILES
+python3 $GEN_CSV_REPORT_FILES $CSV_FILES $REPORT_FILES
 ########################### ENABLE BELOW SECTION TO DISABLE TEST ##########################
 echo "=== Run Robot !!! Done !!! ==="

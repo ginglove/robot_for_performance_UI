@@ -22,9 +22,9 @@ USR_INFOR_FILES="$path/robot_for_performance_UI/5_test_cases/user.txt"
 USR_PASSWORD="123456"
 
 ############ REMOVE RESULT FOLDER ##################
-echo "=== Remove result folder==="
-echo "$RESULT_FOLDER"
-rm -rf $RESULT_FOLDER/*
+# echo "=== Remove result folder==="
+# echo "$RESULT_FOLDER"
+# rm -rf $RESULT_FOLDER/*
 
 
 ############ RUNNING TEST ##################
