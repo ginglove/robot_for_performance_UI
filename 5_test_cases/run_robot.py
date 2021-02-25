@@ -50,7 +50,6 @@ for line in lines:
             '--variable', 'USERNAME:' + user,
             '--variable', 'PASSWORD:' + testUsersPassword,
             '-v browser:chrome',
-            '-t', 'Login Test',
             '-d' + userPath + '',
             '' + suiteFile,
     ]

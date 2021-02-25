@@ -39,7 +39,7 @@ Resource          ./1_common/web_common_keywords.robot
 
 #### ROBOT ELEMENT ####
 Resource     ./2_elements/LoginPage.robot
-Resource     ./2_elements/HomePage.robot
+Resource     ./2_elements/homepage.robot
 
 #### ROBOT KEYWORDS ####
 Resource     ./4_keywords/Login_Keywords.robot
