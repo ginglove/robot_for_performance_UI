@@ -239,7 +239,7 @@ ${NUMBERS}      1234567890
 
 [Common] - Input text into textbox
     [Arguments]    ${textbox_loc}    ${text}
-    wait until keyword succeeds    10s     1s    Element Should Be Visible    ${textbox_loc}
+    wait until keyword succeeds    15s     2s    Element Should Be Visible    ${textbox_loc}
     input text    ${textbox_loc}    ${text}
     [return]     ${text}
 

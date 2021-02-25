@@ -30,10 +30,10 @@ def median_value(data):
 def tps_count(transaction,total_time):
     return int(transaction)/int(total_time)
 
-performanceFileReport_path="/home/giang/Documents/robot_ui_performance/robot_for_performance_UI/results/execution_time_report.csv"
-csvReportsFile = "/home/giang/Documents/robot_ui_performance/robot_for_performance_UI/results/performance_report.csv"
-#performanceFileReport_path=sys.argv[1]
-#csvReportsFile = sys.argv[2]
+# performanceFileReport_path="/home/giang/Documents/robot_ui_performance/robot_for_performance_UI/results/execution_time_report.csv"
+# csvReportsFile = "/home/giang/Documents/robot_ui_performance/robot_for_performance_UI/results/performance_report.csv"
+performanceFileReport_path=sys.argv[1]
+csvReportsFile = sys.argv[2]
 executionTime = []
 total_value=0
 total_time=0
