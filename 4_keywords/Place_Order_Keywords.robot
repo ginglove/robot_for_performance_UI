@@ -4,11 +4,11 @@ Resource      ../imports.robot
 
 ***Keywords***
 [KW] Select StockID 
-    Click Element   ${orderStockID}
+    [Common] - click element   ${orderStockID}
     ${maCK_1}     Get Text    ${orderStockID}
     Set Global Variable     ${StocksID_order}     ${maCK_1}
 [KW] Select Price 
-    Click Element   ${orderPrice}
+    [Common] - click element   ${orderPrice}
     ${giaCK_1}    Get Text    ${orderPrice}
     Set Global Variable     ${Price_order}     ${giaCK_1}
 [KW] Input Into Buy Stock Trading
@@ -18,11 +18,11 @@ Resource      ../imports.robot
     [Common] - Input text into textbox     ${txt_Price}       ${Price}
 
 [KW] Click Button Buy 
-    Click Element   ${btn_Buy}    
+    [Common] - click element   ${btn_Buy}    
     Wait Until Element Is Visible   ${btn_Confirm} 
 
 [KW] Click Button Confirm Buy 
-    CLick Element   ${btn_Confirm} 
+    [Common] - click element   ${btn_Confirm} 
     Sleep   10s
 [KW] Verify Order Success 
     ${maCK_2}     Get Text    ${lb_StocksID}
