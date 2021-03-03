@@ -32,17 +32,17 @@ rm -rf $RESULT_FOLDER/*
 echo "=== Run robot test==="
 curr_time= date +'%d-%m-%Y %T'
 print "$curr_time"
-python3 $TESTCASE_FILES $ROBOT_FILES $USR_INFOR_FILES $USR_PASSWORD $RESULT_FOLDER
+python $TESTCASE_FILES $ROBOT_FILES $USR_INFOR_FILES $USR_PASSWORD $RESULT_FOLDER
 
 ############ SAVE EXECUTION TIME TO CSV FILE ##################
 end_time= date +'%d-%m-%Y %T'
 print "$end_time"
 echo "=== Save Execution Time==="
-python3 $EXPORT_CSV_FILES $USR_INFOR_FILES $CSV_FILES $RESULT_FOLDER
+python3.7 $EXPORT_CSV_FILES $USR_INFOR_FILES $CSV_FILES $RESULT_FOLDER
 
 
 ############ GEN CSV REPORT ##################
 echo "=== GEN CSV REPORT==="
-python3 $GEN_CSV_REPORT_FILES $CSV_FILES $REPORT_FILES
+python3.7 $GEN_CSV_REPORT_FILES $CSV_FILES $REPORT_FILES
 ########################### ENABLE BELOW SECTION TO DISABLE TEST ##########################
 echo "=== Run Robot !!! Done !!! ==="
