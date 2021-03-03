@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Running Robot Script'){
             steps{ 
-                sh 'ls -al's
+                sh 'ls -al'
                 sh 'sh ./6_scripts/run_parallel_login.test.sh'
                 sh ' ls -al ./results'
                 // script {
