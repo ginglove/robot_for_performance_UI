@@ -109,7 +109,7 @@ ${NUMBERS}      1234567890
 
 [Common] - click element
     [Arguments]  ${element_loc}
-    wait until keyword succeeds     5s    1s    Wait Until Element Is Visible    ${element_loc}    timeout=20s    error=Could not find ${element_loc} element.
+    wait until keyword succeeds     20s    1s    Wait Until Element Is Visible    ${element_loc}    timeout=20s    error=Could not find ${element_loc} element.
     click element    ${element_loc}
 
 

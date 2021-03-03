@@ -16,4 +16,4 @@ Login Test
      Run Keyword If      '${suc_mua_hien_tai}' == '-'       Run Keywords
      ...       should be true  ${FALSE}
      ...       ELSE           should be true  ${TRUE}
-     Close Browser
+     #Close Browser
