@@ -9,9 +9,10 @@ chromedriver --version
 
 
 ################## CONFIG ENV ##################
+curr_path="$(dirname $PWD)"
 path="$(dirname "$(dirname $PWD)")"
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
-echo "path : $parentpath"
+echo "path : $curr_path"
 TESTCASE_FILES="$path/robot_for_performance_UI/5_test_cases/run_robot.py"
 RESULT_FOLDER="$path/robot_for_performance_UI/results"
 
