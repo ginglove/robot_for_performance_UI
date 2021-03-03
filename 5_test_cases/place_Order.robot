@@ -3,8 +3,8 @@ Documentation    Suite description
 Resource      ../imports.robot
 
 ***Variables***
-${USERNAME}
-${PASSWORD}
+${USERNAME}     030454  
+${PASSWORD}     123456
 ${StocksID}     HCM    
 ${Quantity}     100
 ${Price}        31
