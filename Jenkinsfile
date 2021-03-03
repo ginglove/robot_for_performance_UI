@@ -1,9 +1,6 @@
 pipeline {
 //None parameter in the agent section means that no global agent will be allocated for the entire Pipeline’s
 //execution and that each stage directive must specify its own agent section.
-    environment {
-        BUILD_USER = ''
-    }
     agent {docker 
            {
                image 'ginglove/docker_robot_python_37:1.0.1'
