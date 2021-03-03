@@ -38,7 +38,7 @@ python $TESTCASE_FILES $ROBOT_FILES $USR_INFOR_FILES $USR_PASSWORD $RESULT_FOLDE
 
 ############ SAVE EXECUTION TIME TO CSV FILE ##################
 end_time= date +'%d-%m-%Y %T'
-print "$end_time"
+echo "$end_time"
 echo "=== Save Execution Time==="
 python3.7 $EXPORT_CSV_FILES $USR_INFOR_FILES $CSV_FILES $RESULT_FOLDER
 

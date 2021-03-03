@@ -5,7 +5,6 @@ import time
 import webbrowser
 import sys 
 import csv
-import numpy as np
 import math
 import statistics
 
