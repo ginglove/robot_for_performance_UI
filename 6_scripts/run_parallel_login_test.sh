@@ -4,13 +4,14 @@ whoami
 groups
 pwd
 ls -la
-python3 --version
+python3.7 --version
 chromedriver --version
 
 
 ################## CONFIG ENV ##################
 path="$(dirname "$(dirname $PWD)")"
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
+echo "path : $parentpath"
 TESTCASE_FILES="$path/robot_for_performance_UI/5_test_cases/run_robot.py"
 RESULT_FOLDER="$path/robot_for_performance_UI/results"
 
@@ -31,7 +32,7 @@ rm -rf $RESULT_FOLDER/*
 ############ RUNNING TEST ##################
 echo "=== Run robot test==="
 curr_time= date +'%d-%m-%Y %T'
-print "$curr_time"
+echo "$curr_time"
 python $TESTCASE_FILES $ROBOT_FILES $USR_INFOR_FILES $USR_PASSWORD $RESULT_FOLDER
 
 ############ SAVE EXECUTION TIME TO CSV FILE ##################
