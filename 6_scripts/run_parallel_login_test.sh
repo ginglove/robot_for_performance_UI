@@ -9,7 +9,7 @@ chromedriver --version
 
 
 ################## CONFIG ENV ##################
-curr_path="$(dirname $PWD)"
+curr_path="$PWD"
 path="$(dirname "$(dirname $PWD)")"
 parentpath="$(dirname "$(dirname "$(dirname $PWD)")")"
 echo "path : $curr_path"
