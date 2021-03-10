@@ -14,3 +14,6 @@ ${orderPrice}       //div[@row-index="0"]//div[@col-id="LastPriceCol"]
 ${lb_StocksID}      //div[@row-index="0"]//div[@class="ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-last-left-pinned text-left symbolColumn ag-cell-value"]
 ${lb_Quantity}      ${Quantity}
 ${lb_Price}         //section[@class="inno-content"]//div[@class="ag-center-cols-container"]//div[@row-index="0"]//div[@col-id="OrderPrice"]
+
+# Chart
+${PriceChart}       //span[@class="u last pointer"]

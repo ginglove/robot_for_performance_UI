@@ -12,7 +12,5 @@ Login Test
      [Kw] - Input into Account and Password       ${USERNAME}         ${PASSWORD}
      [Kw] - Click login button
      [Common] - Execute JavaScripts Wait Element Is Visible           //div[@id='logo']
-     [KW] Select Price
-     ${Price_Chart}    Get Text       //span[@class="u last pointer"]
-     Should Be Equal     ${Price_order}     ${Price_Chart}
+     [Kw] - Verify Chart 
      Close Browser

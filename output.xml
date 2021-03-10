@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.9.2 on win32)" generated="20210310 17:17:52.654" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.9.2 on win32)" generated="20210310 17:30:30.287" rpa="false">
 <suite id="s1" name="Login Performance Ui" source="G:\RobotFramework\robot_for_performance_UI\5_test_cases\login_performance_ui.robot">
 <test id="s1-t1" name="Login Test">
 <kw name="[Common] - Open Chrome Browser with mode" library="web_common_keywords">
@@ -14,8 +14,8 @@
 <assign>
 <var>${browser}</var>
 </assign>
-<msg timestamp="20210310 17:17:53.843" level="INFO">${browser} = chrome</msg>
-<status status="PASS" starttime="20210310 17:17:53.842" endtime="20210310 17:17:53.843"></status>
+<msg timestamp="20210310 17:30:31.404" level="INFO">${browser} = chrome</msg>
+<status status="PASS" starttime="20210310 17:30:31.404" endtime="20210310 17:30:31.404"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -25,8 +25,8 @@
 <assign>
 <var>${true}</var>
 </assign>
-<msg timestamp="20210310 17:17:53.843" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20210310 17:17:53.843" endtime="20210310 17:17:53.843"></status>
+<msg timestamp="20210310 17:30:31.405" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20210310 17:30:31.405" endtime="20210310 17:30:31.405"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
@@ -41,8 +41,8 @@
 <assign>
 <var>${list_options}</var>
 </assign>
-<msg timestamp="20210310 17:17:53.844" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
-<status status="PASS" starttime="20210310 17:17:53.843" endtime="20210310 17:17:53.844"></status>
+<msg timestamp="20210310 17:30:31.405" level="INFO">${list_options} = ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']</msg>
+<status status="PASS" starttime="20210310 17:30:31.405" endtime="20210310 17:30:31.405"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -52,8 +52,8 @@
 <assign>
 <var>${args}</var>
 </assign>
-<msg timestamp="20210310 17:17:53.844" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
-<status status="PASS" starttime="20210310 17:17:53.844" endtime="20210310 17:17:53.844"></status>
+<msg timestamp="20210310 17:30:31.405" level="INFO">${args} = {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security', '--disable-impl-side-painting', '--enable-features=NetworkService,NetworkServiceInProcess']}</msg>
+<status status="PASS" starttime="20210310 17:30:31.405" endtime="20210310 17:30:31.406"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -66,8 +66,8 @@
 <assign>
 <var>${desired_capabilities}</var>
 </assign>
-<msg timestamp="20210310 17:17:53.845" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
-<status status="PASS" starttime="20210310 17:17:53.845" endtime="20210310 17:17:53.845"></status>
+<msg timestamp="20210310 17:30:31.406" level="INFO">${desired_capabilities} = {'acceptSslCerts': True, 'acceptInsecureCerts': True, 'ignore-certificate-errors': True, 'chromeOptions': {'args': ['--no-sandbox', '--headless', '--ignore-certificate-errors', '--disable-web-security...</msg>
+<status status="PASS" starttime="20210310 17:30:31.406" endtime="20210310 17:30:31.406"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -107,8 +107,8 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210310 17:17:53.846" level="INFO">Opening browser 'chrome' to base url 'https://trading-uat.hsc.com.vn/'.</msg>
-<status status="PASS" starttime="20210310 17:17:53.846" endtime="20210310 17:17:59.601"></status>
+<msg timestamp="20210310 17:30:31.407" level="INFO">Opening browser 'chrome' to base url 'https://trading-uat.hsc.com.vn/'.</msg>
+<status status="PASS" starttime="20210310 17:30:31.407" endtime="20210310 17:30:37.132"></status>
 </kw>
 <kw name="[Common] - Maximize browser size to fit screen" library="web_common_keywords">
 <kw name="Set Window Position" library="SeleniumLibrary">
@@ -117,7 +117,7 @@
 <arg>0</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:17:59.602" endtime="20210310 17:18:01.769"></status>
+<status status="PASS" starttime="20210310 17:30:37.133" endtime="20210310 17:30:39.274"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -125,15 +125,15 @@
 <arg>1440</arg>
 <arg>900</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:18:01.769" endtime="20210310 17:18:01.896"></status>
+<status status="PASS" starttime="20210310 17:30:39.275" endtime="20210310 17:30:39.397"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:17:59.602" endtime="20210310 17:18:01.896"></status>
+<status status="PASS" starttime="20210310 17:30:37.132" endtime="20210310 17:30:39.397"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:17:53.846" endtime="20210310 17:18:01.896"></status>
+<status status="PASS" starttime="20210310 17:30:31.407" endtime="20210310 17:30:39.397"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:17:53.845" endtime="20210310 17:18:01.896"></status>
+<status status="PASS" starttime="20210310 17:30:31.406" endtime="20210310 17:30:39.397"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:17:53.841" endtime="20210310 17:18:01.896"></status>
+<status status="PASS" starttime="20210310 17:30:31.404" endtime="20210310 17:30:39.397"></status>
 </kw>
 <kw name="[Kw] - Input into Account and Password" library="Login_Keywords">
 <arguments>
@@ -158,10 +158,10 @@
 <arguments>
 <arg>${textbox_loc}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:01.923" level="INFO">Element '//input[@class='ant-input ant-input-lg input-escape text-uppercase']' is displayed.</msg>
-<status status="PASS" starttime="20210310 17:18:01.898" endtime="20210310 17:18:01.923"></status>
+<msg timestamp="20210310 17:30:39.424" level="INFO">Element '//input[@class='ant-input ant-input-lg input-escape text-uppercase']' is displayed.</msg>
+<status status="PASS" starttime="20210310 17:30:39.399" endtime="20210310 17:30:39.424"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:01.897" endtime="20210310 17:18:01.923"></status>
+<status status="PASS" starttime="20210310 17:30:39.399" endtime="20210310 17:30:39.424"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -169,10 +169,10 @@
 <arg>${textbox_loc}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:01.923" level="INFO">Typing text '030454' into text field '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
-<status status="PASS" starttime="20210310 17:18:01.923" endtime="20210310 17:18:02.021"></status>
+<msg timestamp="20210310 17:30:39.424" level="INFO">Typing text '030454' into text field '//input[@class='ant-input ant-input-lg input-escape text-uppercase']'.</msg>
+<status status="PASS" starttime="20210310 17:30:39.424" endtime="20210310 17:30:39.528"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:01.897" endtime="20210310 17:18:02.021"></status>
+<status status="PASS" starttime="20210310 17:30:39.398" endtime="20210310 17:30:39.528"></status>
 </kw>
 <kw name="[Common] - Input text into textbox" library="web_common_keywords">
 <arguments>
@@ -192,10 +192,10 @@
 <arguments>
 <arg>${textbox_loc}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:02.045" level="INFO">Element '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']' is displayed.</msg>
-<status status="PASS" starttime="20210310 17:18:02.022" endtime="20210310 17:18:02.046"></status>
+<msg timestamp="20210310 17:30:39.551" level="INFO">Element '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']' is displayed.</msg>
+<status status="PASS" starttime="20210310 17:30:39.530" endtime="20210310 17:30:39.552"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.022" endtime="20210310 17:18:02.046"></status>
+<status status="PASS" starttime="20210310 17:30:39.529" endtime="20210310 17:30:39.552"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -203,12 +203,12 @@
 <arg>${textbox_loc}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:02.046" level="INFO">Typing text '123456' into text field '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']'.</msg>
-<status status="PASS" starttime="20210310 17:18:02.046" endtime="20210310 17:18:02.147"></status>
+<msg timestamp="20210310 17:30:39.552" level="INFO">Typing text '123456' into text field '//input[@class='ant-input ant-input-lg input-escape passwords-mask ']'.</msg>
+<status status="PASS" starttime="20210310 17:30:39.552" endtime="20210310 17:30:39.652"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.022" endtime="20210310 17:18:02.148"></status>
+<status status="PASS" starttime="20210310 17:30:39.528" endtime="20210310 17:30:39.652"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:01.897" endtime="20210310 17:18:02.148"></status>
+<status status="PASS" starttime="20210310 17:30:39.398" endtime="20210310 17:30:39.652"></status>
 </kw>
 <kw name="[Kw] - Click login button" library="Login_Keywords">
 <kw name="[Common] - click element" library="web_common_keywords">
@@ -232,21 +232,21 @@
 <arg>timeout=20s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:18:02.149" endtime="20210310 17:18:02.170"></status>
+<status status="PASS" starttime="20210310 17:30:39.654" endtime="20210310 17:30:39.674"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.149" endtime="20210310 17:18:02.170"></status>
+<status status="PASS" starttime="20210310 17:30:39.653" endtime="20210310 17:30:39.675"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:02.170" level="INFO">Clicking element '//button[@class='ant-btn ant-btn-primary ant-btn-lg']'.</msg>
-<status status="PASS" starttime="20210310 17:18:02.170" endtime="20210310 17:18:02.216"></status>
+<msg timestamp="20210310 17:30:39.675" level="INFO">Clicking element '//button[@class='ant-btn ant-btn-primary ant-btn-lg']'.</msg>
+<status status="PASS" starttime="20210310 17:30:39.675" endtime="20210310 17:30:39.730"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.149" endtime="20210310 17:18:02.217"></status>
+<status status="PASS" starttime="20210310 17:30:39.653" endtime="20210310 17:30:39.730"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.148" endtime="20210310 17:18:02.217"></status>
+<status status="PASS" starttime="20210310 17:30:39.653" endtime="20210310 17:30:39.730"></status>
 </kw>
 <kw name="[Common] - Execute JavaScripts Wait Element Is Visible" library="web_common_keywords">
 <doc>Execute JavaScripts Wait Element Is Visible</doc>
@@ -278,33 +278,33 @@
 <arguments>
 <arg>document.evaluate("${element_xpath}", document, null, XPathResult.ANY_TYPE, null).iterateNext().style.display</arg>
 </arguments>
-<msg timestamp="20210310 17:18:02.220" level="INFO">Executing JavaScript:
+<msg timestamp="20210310 17:30:39.734" level="INFO">Executing JavaScript:
 document.evaluate("//div[@id='logo']", document, null, XPathResult.ANY_TYPE, null).iterateNext().style.display
 Without any arguments.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20210310 17:18:02.850" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210310 17:18:02.232" endtime="20210310 17:18:02.850"></status>
+<msg timestamp="20210310 17:30:40.162" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210310 17:30:39.748" endtime="20210310 17:30:40.162"></status>
 </kw>
-<msg timestamp="20210310 17:18:02.852" level="FAIL">JavascriptException: Message: javascript error: Cannot read property 'style' of null
+<msg timestamp="20210310 17:30:40.164" level="FAIL">JavascriptException: Message: javascript error: Cannot read property 'style' of null
   (Session info: chrome=88.0.4324.190)
 </msg>
-<status status="FAIL" starttime="20210310 17:18:02.218" endtime="20210310 17:18:02.852"></status>
+<status status="FAIL" starttime="20210310 17:30:39.733" endtime="20210310 17:30:40.164"></status>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>document.evaluate("${element_xpath}", document, null, XPathResult.ANY_TYPE, null).iterateNext().style.display</arg>
 </arguments>
-<msg timestamp="20210310 17:18:03.861" level="INFO">Executing JavaScript:
+<msg timestamp="20210310 17:30:41.169" level="INFO">Executing JavaScript:
 document.evaluate("//div[@id='logo']", document, null, XPathResult.ANY_TYPE, null).iterateNext().style.display
 Without any arguments.</msg>
-<status status="PASS" starttime="20210310 17:18:03.859" endtime="20210310 17:18:03.943"></status>
+<status status="PASS" starttime="20210310 17:30:41.168" endtime="20210310 17:30:41.341"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.218" endtime="20210310 17:18:03.943"></status>
+<status status="PASS" starttime="20210310 17:30:39.733" endtime="20210310 17:30:41.341"></status>
 </kw>
-<msg timestamp="20210310 17:18:03.943" level="INFO">${isVisible} = True</msg>
-<status status="PASS" starttime="20210310 17:18:02.218" endtime="20210310 17:18:03.944"></status>
+<msg timestamp="20210310 17:30:41.341" level="INFO">${isVisible} = True</msg>
+<status status="PASS" starttime="20210310 17:30:39.733" endtime="20210310 17:30:41.341"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -314,8 +314,8 @@ Without any arguments.</msg>
 <assign>
 <var>${true}</var>
 </assign>
-<msg timestamp="20210310 17:18:03.944" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20210310 17:18:03.944" endtime="20210310 17:18:03.944"></status>
+<msg timestamp="20210310 17:30:41.342" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20210310 17:30:41.341" endtime="20210310 17:30:41.342"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -324,10 +324,11 @@ Without any arguments.</msg>
 <arg>${true}</arg>
 <arg>Element ${element_xpath} is not Visible !</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:18:03.944" endtime="20210310 17:18:03.945"></status>
+<status status="PASS" starttime="20210310 17:30:41.342" endtime="20210310 17:30:41.343"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:02.217" endtime="20210310 17:18:03.945"></status>
+<status status="PASS" starttime="20210310 17:30:39.732" endtime="20210310 17:30:41.343"></status>
 </kw>
+<kw name="[Kw] - Verify Chart" library="Login_Keywords">
 <kw name="[KW] Select Price" library="Place_Order_Keywords">
 <kw name="[Common] - click element" library="web_common_keywords">
 <arguments>
@@ -350,19 +351,19 @@ Without any arguments.</msg>
 <arg>timeout=20s</arg>
 <arg>error=Could not find ${element_loc} element.</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:18:03.946" endtime="20210310 17:18:04.203"></status>
+<status status="PASS" starttime="20210310 17:30:41.345" endtime="20210310 17:30:41.634"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:03.946" endtime="20210310 17:18:04.203"></status>
+<status status="PASS" starttime="20210310 17:30:41.345" endtime="20210310 17:30:41.634"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${element_loc}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:04.204" level="INFO">Clicking element '//div[@row-index="0"]//div[@col-id="LastPriceCol"]'.</msg>
-<status status="PASS" starttime="20210310 17:18:04.203" endtime="20210310 17:18:04.414"></status>
+<msg timestamp="20210310 17:30:41.634" level="INFO">Clicking element '//div[@row-index="0"]//div[@col-id="LastPriceCol"]'.</msg>
+<status status="PASS" starttime="20210310 17:30:41.634" endtime="20210310 17:30:41.808"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:03.945" endtime="20210310 17:18:04.415"></status>
+<status status="PASS" starttime="20210310 17:30:41.344" endtime="20210310 17:30:41.808"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
@@ -372,8 +373,8 @@ Without any arguments.</msg>
 <assign>
 <var>${giaCK_1}</var>
 </assign>
-<msg timestamp="20210310 17:18:05.225" level="INFO">${giaCK_1} = 42.00</msg>
-<status status="PASS" starttime="20210310 17:18:04.415" endtime="20210310 17:18:05.225"></status>
+<msg timestamp="20210310 17:30:42.501" level="INFO">${giaCK_1} = 42.00</msg>
+<status status="PASS" starttime="20210310 17:30:41.809" endtime="20210310 17:30:42.501"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
@@ -381,34 +382,36 @@ Without any arguments.</msg>
 <arg>${Price_order}</arg>
 <arg>${giaCK_1}</arg>
 </arguments>
-<msg timestamp="20210310 17:18:05.225" level="INFO">${Price_order} = 42.00</msg>
-<status status="PASS" starttime="20210310 17:18:05.225" endtime="20210310 17:18:05.225"></status>
+<msg timestamp="20210310 17:30:42.502" level="INFO">${Price_order} = 42.00</msg>
+<status status="PASS" starttime="20210310 17:30:42.501" endtime="20210310 17:30:42.502"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:18:03.945" endtime="20210310 17:18:05.225"></status>
+<status status="PASS" starttime="20210310 17:30:41.344" endtime="20210310 17:30:42.502"></status>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
-<arg>//span[@class="u last pointer"]</arg>
+<arg>${PriceChart}</arg>
 </arguments>
 <assign>
-<var>${Price_success}</var>
+<var>${Price}</var>
 </assign>
-<msg timestamp="20210310 17:18:05.289" level="INFO">${Price_success} = 42.00</msg>
-<status status="PASS" starttime="20210310 17:18:05.234" endtime="20210310 17:18:05.289"></status>
+<msg timestamp="20210310 17:30:42.567" level="INFO">${Price} = 42.00</msg>
+<status status="PASS" starttime="20210310 17:30:42.502" endtime="20210310 17:30:42.567"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
 <arguments>
 <arg>${Price_order}</arg>
-<arg>${Price_success}</arg>
+<arg>${Price}</arg>
 </arguments>
-<status status="PASS" starttime="20210310 17:18:05.290" endtime="20210310 17:18:05.290"></status>
+<status status="PASS" starttime="20210310 17:30:42.567" endtime="20210310 17:30:42.567"></status>
 </kw>
-<status status="PASS" starttime="20210310 17:17:53.841" endtime="20210310 17:18:05.290" critical="yes"></status>
+<status status="PASS" starttime="20210310 17:30:41.344" endtime="20210310 17:30:42.567"></status>
+</kw>
+<status status="PASS" starttime="20210310 17:30:31.403" endtime="20210310 17:30:42.568" critical="yes"></status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20210310 17:17:52.654" endtime="20210310 17:18:05.295"></status>
+<status status="PASS" starttime="20210310 17:30:30.288" endtime="20210310 17:30:42.569"></status>
 </suite>
 <statistics>
 <total>
@@ -422,7 +425,7 @@ Without any arguments.</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210310 17:17:53.691" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
+<msg timestamp="20210310 17:30:31.263" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
 Traceback (most recent call last):
   File "G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py", line 1, in &lt;module&gt;
     from Crypto.PublicKey import RSA
@@ -434,7 +437,7 @@ PYTHONPATH:
   c:\users\dongvd\appdata\local\programs\python\python39
   C:\Users\dongvd\AppData\Roaming\Python\Python39\site-packages
   c:\users\dongvd\appdata\local\programs\python\python39\lib\site-packages</msg>
-<msg timestamp="20210310 17:17:53.788" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\0_resources\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
+<msg timestamp="20210310 17:30:31.362" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\0_resources\imports.robot': Importing test library 'G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py' failed: ModuleNotFoundError: No module named 'Crypto'
 Traceback (most recent call last):
   File "G:\RobotFramework\robot_for_performance_UI\0_resources\pythonlibs\rsa_encryption.py", line 1, in &lt;module&gt;
     from Crypto.PublicKey import RSA
@@ -446,7 +449,7 @@ PYTHONPATH:
   c:\users\dongvd\appdata\local\programs\python\python39
   C:\Users\dongvd\AppData\Roaming\Python\Python39\site-packages
   c:\users\dongvd\appdata\local\programs\python\python39\lib\site-packages</msg>
-<msg timestamp="20210310 17:17:53.837" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\2_elements\HomePage.robot': Setting variable '${lb_Quantity}' failed: Variable '${Quantity}' not found. Did you mean:
+<msg timestamp="20210310 17:30:31.395" level="ERROR">Error in file 'G:\RobotFramework\robot_for_performance_UI\2_elements\HomePage.robot': Setting variable '${lb_Quantity}' failed: Variable '${Quantity}' not found. Did you mean:
     ${lb_Quantity}
     ${txt_Quantity}</msg>
 </errors>
