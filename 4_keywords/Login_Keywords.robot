@@ -18,7 +18,10 @@ Resource      ../imports.robot
      [Common] - click element     ${btn_login}
      [Common] - Select Iframe     ${iframe_login}
      [Common] - Input text into textbox     ${txtbox_form_account}        abcd
-
+[Kw] - Verify Chart 
+     [KW] Select Price
+     ${Price}    Get Text       ${PriceChart}
+     Should Be Equal     ${Price_order}     ${Price}
 [KW] Login 
      Open Browser   ${url}    ${browser}
      Maximize Browser Window
