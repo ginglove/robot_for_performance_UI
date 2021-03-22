@@ -49,7 +49,7 @@ for line in lines:
             # abitrary amount of variables can be added here
             '--variable', 'USERNAME:' + user,
             '--variable', 'PASSWORD:' + testUsersPassword,
-            '-v browser:chrome',
+            '-v browser:headlesschrome',
             '-d' + userPath + '',
             '' + suiteFile,
     ]
