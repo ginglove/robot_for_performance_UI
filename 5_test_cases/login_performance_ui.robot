@@ -3,8 +3,8 @@ Documentation    Suite description
 Resource      ../imports.robot
 
 *** Variables ***
-${USERNAME}     030454   
-${PASSWORD}    123456
+${USERNAME}
+${PASSWORD}    
 *** Test Cases ***
 Login Test
      #log            ${URL}
