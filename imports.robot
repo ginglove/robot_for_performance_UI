@@ -7,7 +7,7 @@ Library           RequestsLibrary
 Library           SSHLibrary
 Library           Collections
 Library           DateTime
-Library           OperatingSystem
+Library           OperatingSystem 
 Library           DatabaseLibrary
 Library           REST          ssl_verify=${False}
 
@@ -26,7 +26,6 @@ Library           ./0_resources/pythonlibs/json_generator.py
 Library           ./0_resources/pythonlibs/math_util.py
 Library           ./0_resources/pythonlibs/readcsvfile.py
 Library           ./0_resources/pythonlibs/remove_quote_string_sql.py
-Library           ./0_resources/pythonlibs/rsa_encryption.py
 Library           ./0_resources/pythonlibs/rest_util.py
 Library           ./0_resources/pythonlibs/urlparse_compat.py
 Library           ./0_resources/pythonlibs/RabbitMq.py
@@ -39,7 +38,7 @@ Resource          ./1_common/web_common_keywords.robot
 
 #### ROBOT ELEMENT ####
 Resource     ./2_elements/LoginPage.robot
-Resource     ./2_elements/HomePage.robot
+Resource     ./2_elements/homepage.robot
 
 #### ROBOT KEYWORDS ####
 Resource     ./4_keywords/Login_Keywords.robot

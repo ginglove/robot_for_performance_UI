@@ -20,7 +20,6 @@ Library           ../0_resources/pythonlibs/json_generator.py
 Library           ../0_resources/pythonlibs/math_util.py
 Library           ../0_resources/pythonlibs/readcsvfile.py
 Library           ../0_resources/pythonlibs/remove_quote_string_sql.py
-Library           ../0_resources/pythonlibs/rsa_encryption.py
 Library           ../0_resources/pythonlibs/rest_util.py
 Library           ../0_resources/pythonlibs/urlparse_compat.py
 Library           REST          ssl_verify=${False}
