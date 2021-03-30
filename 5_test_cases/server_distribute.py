@@ -9,10 +9,10 @@ table = "creditscore"
 
 # Connect to Database
 mydb = mysql.connector.connect(
-  host="10.83.35.70",
+  host="",
   user="root",
-  password="123$%^",
-  database="credit_score"
+  password="",
+  database=""
 )
 
 # Select and count number of User
