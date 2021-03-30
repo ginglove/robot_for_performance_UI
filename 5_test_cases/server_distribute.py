@@ -1,6 +1,7 @@
 import  csv
 import mysql.connector
 import math
+import numpy
 
 # Variable
 global limit, offset
@@ -9,10 +10,10 @@ table = "creditscore"
 
 # Connect to Database
 mydb = mysql.connector.connect(
-  host="",
+  host="10.83.35.70",
   user="root",
-  password="",
-  database=""
+  password="123$%^",
+  database="credit_score"
 )
 
 # Select and count number of User
@@ -33,7 +34,8 @@ with open('server.csv', 'r') as csvFile:
     for row in reader:
         server.append(row)
         ips+=1
-    print('Number of Server IPs = ',ips)    
+    print('Number of Server IPs = ',ips)   
+    print(server) 
     limit = math.ceil(users/ips)
 
  # Query DB with Limit and Offset
@@ -43,5 +45,6 @@ for x in server:
   offset = index*limit
   mycursor.execute(f"SELECT id FROM {table} LIMIT {limit} OFFSET {offset}")
   server1 = mycursor.fetchall()
-  print(f'ID List {index}',server1)
+  array = numpy.array(server1)
+  print(f'ID List {index}',array)
        
